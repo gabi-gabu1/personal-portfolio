@@ -1,26 +1,35 @@
 :root {
-  --primary-color: #fff4f4;
-  --btn-color: #e07178;
+  --primary-color: #f9f7fe;
+  --btn-color: #6c63ff;
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
 }
+body {
+  text-align: center;
+}
+p {
+  text-align: center;
+}
 h1 {
+  font-size: 80px;
+}
+h1,
+h2 {
   font-family: var(--heading-font);
   font-weight: bold;
 }
+
 .content {
   text-align: center;
   background-color: var(--primary-color);
   padding: 160px 20px;
+  max-width: 100%;
 }
 
 .content p {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 30px;
-}
-.content h1 {
-  font-size: 80px;
 }
 .content h2 {
   font-family: var(--default-font);
@@ -38,5 +47,27 @@ h1 {
 }
 .btn-branding:hover {
   color: #f9f7fe;
-  background-color: #e97f85;
+  /* background-color: #e97f85; */
+}
+.btn-project {
+  color: var(--btn-color);
+  border: solid 1px var(--btn-color);
+}
+.btn-project:hover {
+  color: var(--btn-color);
+}
+.project-description {
+  padding: 60px 20px;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 50px;
+  }
+  .content {
+    padding: 80px 20px;
+  }
+  .content p {
+    font-size: 25px;
+    font-weight: 500;
+  }
 }
