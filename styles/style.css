@@ -4,9 +4,7 @@
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
 }
-body {
-  text-align: center;
-}
+
 p {
   text-align: center;
 }
@@ -19,6 +17,36 @@ h2 {
   font-weight: bold;
 }
 
+ul {
+  padding: 0;
+}
+nav {
+  padding: 20px;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav li {
+  display: inline;
+  list-style: none;
+  line-height: 40px;
+  margin-left: 10px;
+}
+nav a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.7);
+  transition: all 200ms ease-in-out;
+}
+
+nav a:hover,
+.active {
+  color: var(--btn-color);
+}
+
+.logo {
+  max-height: 40px;
+}
 .content {
   text-align: center;
   background-color: var(--primary-color);
