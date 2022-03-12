@@ -1,21 +1,27 @@
 :root {
-  --primary-color: #f9f7fe;
+  --primary-color: #fafafa;
   --btn-color: #6c63ff;
   --default-font: "Poppins", sans-serif;
   --heading-font: "Playfair Display", serif;
+  --first-font: "Cinzel";
+  --second-font: "Great vibes";
+  --third: "Dancing script";
+  --fourth: "Tangerine", sans-serif;
 }
 
 h1 {
-  font-size: 80px;
+  font-family: var(--first-font);
+  font-size: 60px;
 }
+h2,
 h4 {
   font-size: 48px;
 }
-h1,
+
 h2,
 h3,
 h4 {
-  font-family: var(--heading-font);
+  font-family: var(--fourth);
   font-weight: bold;
 }
 
@@ -23,7 +29,11 @@ ul {
   padding: 0;
 }
 nav {
-  padding: 20px;
+  padding: 0px;
+  margin: 15px 0;
+}
+a {
+  font-family: var(--first-font);
 }
 nav ul {
   padding: 0;
@@ -45,6 +55,7 @@ nav a:hover,
 .active {
   color: var(--btn-color);
 }
+
 footer p {
   margin: 0;
 }
@@ -54,6 +65,7 @@ footer .contact-box {
   border-radius: 20px;
 }
 footer .email-link {
+  font-family: var(--default-font);
   text-decoration: none;
   color: black;
   font-size: 24px;
@@ -75,39 +87,49 @@ footer .social-links a:hover {
   color: white;
   background: var(--btn-color);
 }
+
 .logo {
   max-height: 40px;
 }
 .content {
   text-align: center;
-  background-color: var(--primary-color);
-  padding: 160px 20px;
+  padding: 120px 0px;
   max-width: 100%;
+}
+.background-img {
+  background-image: url("/images/marble.jpg");
+  background-size: cover;
+}
+.opacity-background {
+  max-width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .content p {
-  font-family: "Poppins", sans-serif;
+  font-family: var(--first-font);
   font-weight: 700;
   font-size: 30px;
 }
 .content h2 {
-  font-family: var(--default-font);
+  font-family: var(--first-font);
   font-weight: 400;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 36px;
 }
 .btn-branding {
+  font-family: var(--heading-font);
   background-color: var(--btn-color);
-  color: #f9f7fe;
+  color: #ffffff;
   padding: 18px 40px;
   border: none;
   border-radius: 4px;
   transition: all 200ms ease-in-out;
+  box-shadow: 0px 0px 20px;
 }
 .btn-branding:hover {
-  color: #f9f7fe;
-  /* background-color: #e97f85; */
+  color: white;
 }
+
 .btn-project {
   color: var(--btn-color);
   border: solid 1px var(--btn-color);
@@ -149,7 +171,7 @@ footer .social-links a:hover {
     font-size: 50px;
   }
   .content {
-    padding: 80px 20px;
+    padding: 80px 0px;
   }
   .content p {
     font-size: 25px;
